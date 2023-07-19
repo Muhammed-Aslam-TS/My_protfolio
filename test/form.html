@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <!-- icon -->
+            <div class="input_group">
+                <label for="">Full Name</label><br>
+                <input type="text"placeholder="Full Name" id="contact-name"onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input_group">
+                <label for="">Phone No</label><br>
+                <input type="phonenumber"placeholder="8078 968 797"id="contact-phone"onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input_group">
+                <label for="">email</label><br>
+                <input type="email"placeholder="e-mail"id="contact-email"onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+            <div class="input_group">
+                <label for="">message</label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message"id="contact-message"onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+                <button>Submit</button> 
+                <span id="submit-error"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
